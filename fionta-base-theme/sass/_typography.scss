@@ -1,0 +1,149 @@
+/***************
+ Global
+ **************/
+ html {
+ 	font-size: 10px;
+ }
+ body {
+ 	font-size: 1.5rem;
+ 	line-height: 2.5rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: $light;
+	color: $dark;
+  display: -webkit-flex;
+  display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+ -webkit-flex-direction: column;
+ }
+ 
+ a {
+	color: $blue;
+ }
+ 
+ a:active {
+	color: #2f5377;
+ }
+ 
+h1 {
+	font-size: 3rem;
+	line-height: 3.6rem;
+	color: $orange;
+	font-weight: $normal;
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+	font-size: 2.8rem;
+	line-height: 3.4rem;
+	color: $darkblue;
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: $blue;
+}
+
+h4 {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	font-weight: $bold;
+	text-transform: uppercase;
+	color: $dark;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+em { 
+    font-style: italic;
+}
+
+strong {
+	font-weight: $bold;
+}
+
+#fionta-content1 ul, #fionta-content1 ol {
+	  margin-bottom: 27px;
+}
+
+#fionta-content1 ul li {
+	margin-bottom: 24px;
+	margin-left: 20px;
+	font-weight: 600;
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: $lato;
+}
+
+#fionta-content1 ul li:before{
+	content: '>';
+	margin-left: -15px;
+	padding-right: 5px;
+}
+
+#fionta-content1 ol li {
+	margin-bottom: 24px;
+	list-style: decimal;
+	margin-left: 20px;
+	font: 600 1em/1.4em;
+  font-family: $lato;
+}
+
+.field-name-body {
+  line-height: 1.75em;
+}
+ 
+ blockquote {
+  font: 14px/22px normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
+
+input {
+  -moz-appearance: textfield;
+  /* The sum of border and padding on block-start and block-end
+     must be the same here, for buttons, and for <select> (including its
+     internal padding magic) */
+  padding: 1px;
+  border: 1px solid $blue;
+  background-color: $white;
+  color: $dark;
+  font-family: $lato;
+  font-size: 2rem;
+  text-rendering: optimizeLegibility;
+  line-height: 2.4rem;
+  text-align: start;
+  text-transform: none;
+  word-spacing: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+  -moz-binding: url("chrome://global/content/platformHTMLBindings.xml#inputFields");
+  text-indent: 0;
+  -moz-user-select: text;
+  text-shadow: none;
+  overflow-clip-box: content-box;
+  @media screen and (max-width: 60.5rem) {
+  	font-size: 1.5rem;
+  	line-height: 1.8rem;
+  }
+}
+
+.item-list .pager {
+  margin: 50px 0 0;
+  text-align: left;
+  li {
+    padding: 0;
+    &.first {
+      margin: 0 0 0.25em 0;
+    }
+  }
+}

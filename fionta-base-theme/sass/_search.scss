@@ -1,0 +1,213 @@
+/***************
+Search Page
+***************/
+
+.search-form label {
+	display:block;
+}
+
+.search-form input.form-text {
+	padding: 8px 0;
+	margin: 10px 5px 5px 0;
+}
+
+.search-form input[type="submit"] {
+	display: inline-block;
+	font-size: .733em;
+	color: #fff;
+	background-color: #94d6ea;
+	padding: 12px 20px;
+	border: none;
+	text-transform: uppercase;
+	font-family: Lato;
+}
+
+.search-form .fieldset-legend {
+	background: none!important;
+	padding-left: 0!important;
+	font-size: .85em;
+	font-weight: 600;
+}
+
+form.search-form {
+	margin-bottom: 235px;
+}
+
+.search-results {
+	margin-top: 1.3rem;
+}
+
+.page-search {
+	.content h1,
+	p.search-performance {
+		display: none;
+	}
+	.search-api-page-results {
+		h2 {
+			display: none;
+		}
+		.node {
+			h2 {
+				display: block;
+				font-size: 2rem;
+				line-height: 2.4rem;
+			}
+			.content {
+				margin-bottom: 3.4rem;
+			}
+		}
+
+		.node-repository-item {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/dll-work-on-blue.svg');
+		}
+		.node-web-page {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/webpage-on-blue.svg');
+		}
+		.node-manuscript {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/manuscript-on-blue.svg');
+		}
+		.node-repository-item,
+		.node-web-page,
+		.node-manuscript {
+			background-size: 2.7rem 2.7rem;
+			background-repeat: no-repeat;
+			background-position: left top;
+			padding-left: 3.7rem;
+		}
+	}
+	// .panels-flexible-region-last .inside .panel-pane {
+	// 	background: rgba(148,214,234,0.2);
+	// 	margin: 0 0 2rem;
+	// 	padding: 2.8rem 2.5rem;
+	// 	@media screen and (max-width: 768px) {
+	// 		background: rgba(148,214,234,0.2);
+	// 		padding: 2.5rem;
+	// 	}
+	// 	.pane-content {
+	// 	    margin-bottom: 1.3rem;
+	//   		p {
+	//   			margin-bottom: 0;
+ //    		}
+	// 	    @media screen and (max-width: 768px) {
+	// 			margin-bottom: 0;
+	// 	    	padding-bottom: 1.3rem;
+	// 	   	}
+	//  	}
+	//  	h2.pane-title {
+	//  		margin-bottom: 2rem;
+	//  	}
+	// }
+	// .panels-flexible-region-first {
+	// 	width: 71.6%;
+	//     @media screen and (max-width: 768px) {
+	// 	    width: 100%;
+	// 	   	-webkit-order: 2;
+	// 	   	order: 2;
+	// 	}
+	// 	.inside {
+	//     	margin: 0 10.6rem 10rem 0;
+	//     	@media screen and (max-width: 1068px) {
+	// 	    	margin: 0 6.6rem 10rem 0;
+	// 	    }
+	// 	   	@media screen and (max-width: 768px) {
+	// 	   		margin: 0;
+	// 	   	}
+	//    	}
+	// }
+ //    .panels-flexible-region-last {
+	// 	width: 28.4%;
+	//     margin-top: -3.4rem;
+	// 	@media screen and (max-width: 768px) {
+	//     	width: 100%;
+	//  	  	-webkit-order: 1;
+	//     	order: 1;
+	//     	margin-top: 0;
+	// 	}
+	// }    
+	p.search-api-result-count {
+		border-bottom: 1px solid #B9BFC5;
+		padding-bottom: 1rem;
+	}	
+	.panels-flexible-region-inside-first {
+		position: relative;
+		.ctools-collapsible-container {
+			position: absolute;
+			right: 0;
+			top: -50px;
+			border: 1px solid #B9BFC4;
+			width: 120px;
+			background: #fff;
+			z-index: 30;
+			h2 {
+				font-size: 15px;
+				line-height: auto;
+				margin: 0 10px;
+			}
+			img {
+				display: none;
+			}
+			.item-list ul li {
+			    margin: 0 1rem;
+			    font-size: 15px;
+			}
+			.ctools-toggle {
+				float: right;
+				margin: 7px 10px 0 0;
+				background-image: url(/dll-biblio/sites/all/themes/fionta-base-theme/images/up-arrow.png);
+			    background-size: 10px 6px;
+			}
+			.ctools-toggle-collapsed {
+			    background-image: url(/dll-biblio/sites/all/themes/fionta-base-theme/images/down-arrow.png);
+			    background-size: 10px 6px;
+			}
+			
+		}
+	}
+	.panels-flexible-region-last .inside .panel-pane.search-facet {
+		background: #F6F7F8;
+		margin: 0;
+		padding: 0.6rem 2.5rem 0;
+		&:last-of-type {
+			margin: 0 0 2rem;
+		}
+		.pane-content {
+			margin-bottom: 0;
+		}
+		.item-list ul li {
+			padding: 0 0 7px 0;
+			font-weight: 400;
+			line-height: 20px;
+			list-style: none;
+		}
+		input {
+			border: 1px solid #535B62;
+		}
+	}
+	.panels-flexible-region-last .inside .panel-pane.search-facet.last {
+		padding-bottom: 2.2rem;
+		margin: 0 0 2rem;
+	}
+	.search-facet {
+		h2 {
+			font-size: 23px;
+			color: #535B62;
+			padding-top: 2.2rem;
+		}
+		h3 {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 15px;
+			color: #535B62;
+		}
+		.item-list ul {
+			margin: 0;
+			li {
+				margin: 0;
+				a {
+					color: #535B62;
+				}
+			}
+		}
+	}
+}
+

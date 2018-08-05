@@ -1,0 +1,506 @@
+.page-dll-author {
+	h1 {
+		margin-bottom: 2rem;
+		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/author-page-on-orange.svg');
+		background-size: 5rem 5rem;
+		background-repeat: no-repeat;
+		background-position: left 8px;
+		padding-left: 64px;
+		span {
+			font-weight: $light;
+			font-size: 2rem;
+			display: block;
+		}
+	}
+
+	.panel-2col {
+		.panel-separator {
+			display: none;
+		}
+		@media screen and (max-width: 768px) {
+			@include flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		.panel-col-first {
+		    width: 71.6%;
+		    @media screen and (max-width: 768px) {
+		    	width: 100%;
+		    	-webkit-order: 2;
+		    	order: 2;
+		    	.pane-block-4 {
+		    		display: none;
+		    	}
+		    }
+		    .inside {
+		    	margin: 0 10.6rem 10rem 0;
+		    	@media screen and (max-width: 1068px) {
+		    		margin: 0 6.6rem 10rem 0;
+		    	}
+		    	@media screen and (max-width: 768px) {
+		    		margin: 0;
+		    	}
+		    }
+		    h2.pane-title {
+		    	border-bottom: 1px solid $grey;
+		    	padding: 0 0 1.6rem 4.7rem;
+		    	margin-bottom: 1.4rem;
+		    }
+		    #jump-menu {
+		    	margin-bottom: 2.5rem;
+		    }
+	    }
+	    .panel-col-last {
+		    width: 28.4%;
+		    margin-top: -8.4rem;
+		    @media screen and (max-width: 768px) {
+		    	width: 100%;
+		    	-webkit-order: 1;
+		    	order: 1;
+		    	margin-top: 0;
+		    }
+
+		    .pane-block-4 {
+		    	display: none;
+		    	@media screen and (max-width: 768px) {
+		    		display: block;
+		    	}
+		    }
+
+		    .inside {
+		    	background: rgba(148,214,234,0.2);
+		    	margin: 0 0 10rem;
+				padding: 2.8rem 2.5rem;
+				position: relative;
+				.pane-block-5 {
+					position: absolute;
+				    right: 15px;
+				    top: 15px;
+				    z-index: 500;
+				    /* Popup container */
+					.popup {
+					    position: relative;
+					    cursor: pointer;
+					    background: #A03914;
+					    color: #ffffff;
+					    width: 15px;
+					    height: 15px;
+					    display: block;
+					    border-radius: 50%;
+					    text-align: center;
+					    font-size: 11px;
+					    line-height: 15px;
+						.popuptext {
+						    visibility: hidden;
+						    width: 160px;
+						    background-color: #DCDFE2;
+						    text-align: center;
+						    font-size: 15px;
+						    padding: 8px 0;
+						    position: absolute;
+						    z-index: 1;
+						    bottom: 125%;
+						    left: 50%;
+						    margin-left: -80px;
+						    color: #315375;
+					    
+						    &:after {
+							    content: "";
+							    position: absolute;
+							    top: 100%;
+							    left: 50%;
+							    margin-left: -5px;
+							    border-width: 5px;
+							    border-style: solid;
+							    border-color: #DCDFE2 transparent transparent transparent;
+							}
+						}
+						.show {
+						    visibility: visible;
+						    -webkit-animation: fadeIn 1s;
+						    animation: fadeIn 1s
+						}
+					}
+					/* Add animation (fade in the popup) */
+					@-webkit-keyframes fadeIn {
+					    from {opacity: 0;} 
+					    to {opacity: 1;}
+					}
+
+					@keyframes fadeIn {
+					    from {opacity: 0;}
+					    to {opacity:1 ;}
+					}
+				}
+				@media screen and (max-width: 768px) {
+					background: none;
+					padding: 0;
+					margin: 0 0 2rem;
+					.panel-pane {
+						background: rgba(148,214,234,0.2);
+						padding: 0 2.5rem;
+					}
+					.pane-block-4 {
+						background: none;
+						padding: 0;
+					}
+				}
+				.pane-node-field-authorized-name {
+		    		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/authority-record-on-blue.svg');
+					background-size: 3.5rem 3.5rem;
+					background-repeat: no-repeat;
+					background-position: left top;
+					padding-left: 4.5rem;
+					@media screen and (max-width: 768px) {
+						padding-top: 2.5rem;
+						background-position: 2.5rem 2.5rem;
+						padding-left: 7rem;
+					}
+		    	}
+		    	.pane-content {
+		    		margin-bottom: 1.3rem;
+		    		p {
+		    			margin-bottom: 0;
+		    		}
+		    		@media screen and (max-width: 768px) {
+		    			margin-bottom: 0;
+		    			padding-bottom: 1.3rem;
+		    		}
+		    	}
+		    }
+		    h2.pane-title {
+		    	color: $dark;
+		    	font-size: 1.5rem;
+		    	line-height: 1.8rem;
+		    	text-transform: uppercase;
+		    	font-weight: $bold;
+		    }
+		    
+		}
+	}
+	// jump menu 
+	.pane-block-4 {
+		li {
+			font-size: 1.4rem;
+			line-height: 1.7rem;
+			border-right: 1px solid $darkblue;
+			text-transform: uppercase;
+			display: inline;
+			&:first-of-type,
+			&:last-of-type {
+				border-right: none;
+				border-right: none;
+			}
+			a {
+				color: $darkblue;
+				font-weight: $normal;
+				margin: 0 0.8rem;
+			}
+		}
+	}
+
+	// toggles
+	.ctools-collapsible-container {
+		position: relative;
+		margin-bottom: 6rem;
+		padding-top: 2rem;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 2rem;
+		}
+		
+		.ctools-toggle,
+		.ctools-toggle-collapsed {
+			position: absolute;
+			right: 3rem;
+			top: 0;
+			width: 13.2rem;
+			font-size: 1.1rem;
+			line-height: 1.1rem;
+			text-transform: uppercase;
+			font-weight: $bold;
+			color: $darkblue;
+			background: none;
+			@media screen and (max-width: 768px) {
+				background: rgba(185,191,197,0.5);
+				width: 2.4rem;
+				height: 2.4rem;
+				right: 0;
+			}
+		}
+		.ctools-toggle {
+			&:before {
+				content: ".";
+				color: transparent;
+				background: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/minus.svg');
+				width: 1rem;
+				height: 1.1rem;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 1rem 1.1rem;
+				position: absolute;
+				left: 0.7rem;
+				top: 3rem;
+				@media screen and (max-width: 768px) {
+					top: 0.7rem;
+				}
+			}
+			&:after {
+				width: 13.2rem;
+				content: 'Collapse Section';
+				background: rgba(185,191,197,0.5);
+				display: block;
+				padding: 1rem 1rem 1rem 2rem;
+				margin-top: 2rem;
+				@media screen and (max-width: 768px) {
+					content: none;
+				}
+			}
+		}
+		.ctools-toggle-collapsed {
+			
+			&:before {
+				content: ".";
+				color: transparent;
+				background: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/plus.svg');
+				width: 1rem;
+				height: 1.1rem;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 1rem 1.1rem;
+				position: absolute;
+				left: 0.7rem;
+				top: 3rem;
+			}
+			&:after {
+				width: 13.2rem;
+				content: 'Expand Section';
+				background: rgba(185,191,197,0.5);
+				display: block;
+				padding: 1rem 1rem 1rem 2rem;
+				@media screen and (max-width: 768px) {
+					content: none;
+				}
+			}
+		}
+	}
+	
+	// tables
+	table {
+		width: 100%;
+		line-height: 1.8rem;
+	}
+	th {
+		color: $darkblue;
+		text-transform: uppercase;
+		font-weight: $bold;
+		padding: 0 1.5rem 0.8rem 0;
+		position: relative;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+		a {
+			color: $darkblue;
+			&:after {
+				content: ".";
+				color: transparent;
+				width: 10px;
+				height: 6px;
+				background-image: url(/dll-biblio/sites/all/themes/fionta-base-theme/images/down-arrow.png);
+				background-repeat: no-repeat;
+    			background-size: 10px 6px;
+    		    position: absolute;
+    			top: 0.6rem;
+				margin-left: 0.4rem;
+			}
+			img {
+				display: none;
+			}
+		}
+	}
+	th.views-field-title {
+		padding: 0 1.5rem 0.8rem;
+	}
+	tr.even, 
+	tr.odd {
+		border-bottom: none;
+		background: $lightgrey;
+		padding: 0;
+	}
+
+	.view-manuscripts,
+	.view-contextual-view-web-page,
+	.view-item-record-full-citations {
+		td {
+			padding: 0.8rem 1.5rem 1rem 0;
+			@media screen and (max-width: 768px) {
+				padding: 0.8rem 1.5rem 1rem;
+				width: calc(100% - 3rem);
+				display: block;
+			}
+		}
+		td.views-field-title {
+			padding: 0.8rem 1.5rem 1rem;
+			@media screen and (max-width: 768px) {
+				&:before {
+					content: 'Title: ';
+					font-weight: 600;
+					color: $dark;
+				}
+				a {
+					display: inline;
+					
+				}
+			}
+		}
+		@media screen and (max-width: 768px) {
+			td.views-field-field-repository-source:before {
+				content: 'Repository Source: ';
+				font-weight: 600;
+				color: $dark;
+			}
+			td.views-field-field-source-work:before {
+				content: 'Source: ';
+				font-weight: 600;
+				color: $dark;
+			}
+		}
+	}
+	tr.even {
+		background: $white;
+	}
+
+	td.active {
+		background: none;
+	}
+
+	// author works
+	.item-list ul li {
+		margin: 5px;
+	}
+	.item-list .pager {
+		border-bottom: 1px solid #d9d9d9;
+		padding-bottom: 10px;
+		margin: 30px 0 0;
+	}
+	#works {
+		h2.pane-title {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/dll-work-on-blue.svg');
+		}
+	}
+	#item-records {
+		h2.pane-title {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/item-record-on-blue.svg');
+		}
+	}
+	#texts-on-the-internet {
+		h2.pane-title {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/webpage-on-blue.svg');
+		}
+	}
+	#manuscripts {
+		h2.pane-title {
+			background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/manuscript-on-blue.svg');
+		}
+	}
+	h2.pane-title {
+		background-size: 3.5rem 3.5rem;
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+}
+
+.page-dll-work {
+	table {
+		width: 100%;
+		line-height: 1.8rem;
+	}
+	th {
+		color: $darkblue;
+		text-transform: uppercase;
+		font-weight: $bold;
+		padding: 0 1.5rem 0.8rem 0;
+		position: relative;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+		a {
+			color: $darkblue;
+			&:after {
+				content: ".";
+				color: transparent;
+				width: 10px;
+				height: 6px;
+				background-image: url(/dll-biblio/sites/all/themes/fionta-base-theme/images/down-arrow.png);
+				background-repeat: no-repeat;
+    			background-size: 10px 6px;
+    		    position: absolute;
+    			top: 0.6rem;
+				margin-left: 0.4rem;
+			}
+			img {
+				display: none;
+			}
+		}
+	}
+	th.views-field-title {
+		padding: 0 1.5rem 0.8rem;
+	}
+	tr.even, 
+	tr.odd {
+		border-bottom: none;
+		background: $lightgrey;
+		padding: 0;
+	}
+
+	.view-clone-of-contextual-web-page-for-dll-work-page {
+		td {
+			padding: 0.8rem 1.5rem 1rem 0;
+			@media screen and (max-width: 768px) {
+				padding: 0.8rem 1.5rem 1rem;
+				width: calc(100% - 3rem);
+				display: block;
+			}
+		}
+		td.views-field-title {
+			padding: 0.8rem 1.5rem 1rem;
+			@media screen and (max-width: 768px) {
+				&:before {
+					content: 'Title: ';
+					font-weight: 600;
+					color: $dark;
+				}
+				a {
+					display: inline;
+					
+				}
+			}
+		}
+		@media screen and (max-width: 768px) {
+			td.views-field-field-repository-source:before {
+				content: 'Repository Source: ';
+				font-weight: 600;
+				color: $dark;
+			}
+			td.views-field-field-source-work:before {
+				content: 'Source: ';
+				font-weight: 600;
+				color: $dark;
+			}
+		}
+	}
+	tr.even {
+		background: $white;
+	}
+
+	td.active {
+		background: none;
+	}
+}
+
+a.anchor{
+	display:block;
+	position: relative;
+	top:214px; /* fixed header height*/
+	visibility: hidden;
+}
+

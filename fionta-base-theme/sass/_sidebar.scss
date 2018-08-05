@@ -1,0 +1,83 @@
+/*************
+Sidebar
+*************/
+
+.field-name-sidebar-menu {
+	width: 30%;
+	float: right;
+	@media (max-width: 768px) {
+		visibility: hidden;
+		display: none; 
+	}
+}
+
+.field-name-sidebar-menu a {
+	display: inline-block;
+	width: 147px;
+	height: 60px;
+	background: url(/sites/all/themes/fionta_base_theme/images/sidebar-buttons.png) 0 0;
+	padding: 18px 0 0 100px;
+	margin-bottom: 12px;
+	font-size: 1.2em;
+	border: 1px solid $blue;
+	float:right;
+}
+
+.field-name-sidebar-menu a:hover {
+	background: url(../images/sidebar-buttons.png) -248px 2px;
+	border: 1px solid #b9bfc5;
+}
+
+/* Mission & Goals */
+.field-name-sidebar-menu #sidebar-menu-mission-and-goals {
+	background: url(../images/sidebar-buttons.png) 0 458px;
+}
+
+.field-name-sidebar-menu #sidebar-menu-mission-and-goals:hover {
+	background: url(../images/sidebar-buttons.png) -248px 460px;
+}
+
+/* Project Timeline */
+.field-name-sidebar-menu #sidebar-menu-project-timeline {
+	background: url(../images/sidebar-buttons.png) 0 385px;
+}
+
+.field-name-sidebar-menu #sidebar-menu-project-timeline:hover {
+	background: url(../images/sidebar-buttons.png) -248px 386px;
+}
+
+/* Catalog Overview */
+.field-name-sidebar-menu #sidebar-menu-catalog-overview {
+	background: url(../images/sidebar-buttons.png) 0 308px;
+}
+
+.field-name-sidebar-menu #sidebar-menu-catalog-overview:hover {
+	background: url(../images/sidebar-buttons.png) -248px 308px;
+}
+
+/* Video Library */
+.field-name-sidebar-menu #sidebar-menu-video-library {
+	background: url(../images/sidebar-buttons.png) 0 231px;
+}
+
+.field-name-sidebar-menu #sidebar-menu-video-library:hover {
+	background: url(../images/sidebar-buttons.png) -248px 231px;
+}
+
+/* Textual Criticism */
+.field-name-sidebar-menu #sidebar-menu-textual-criticism {
+	background: url(../images/sidebar-buttons.png) 0 152px;
+}
+
+.field-name-sidebar-menu #sidebar-menu-textual-criticism:hover {
+	background: url(../images/sidebar-buttons.png) -248px 151px;
+}
+
+/* Data Visualization */
+.field-name-sidebar-menu #sidebar-menu-data-visualization {
+	background: url(../images/sidebar-buttons.png) 0 75px;
+}
+
+.field-name-sidebar-menu #sidebar-menu-data-visualization:hover {
+	background: url(../images/sidebar-buttons.png) -248px 75px;
+}

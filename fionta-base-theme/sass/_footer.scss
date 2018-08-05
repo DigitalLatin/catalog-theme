@@ -1,0 +1,124 @@
+/***************
+ Footer
+**************/
+
+.footer-wrap {
+	background-color: #d9d9d9;
+	padding: 27px 0;
+	color: #535b62;
+	margin-top: 6rem;
+}
+
+.region-footer {
+	@include max-width;
+	@include flex;
+	h2 {
+		color: $darkblue;
+		font-weight: $light;
+		font-size: 1.6rem;
+	}
+}
+
+#block-menu-menu-footer-menu {
+	width: 23.5%;
+	@media (max-width: 768px) {
+		width: 38%;
+	}
+	@media (max-width: 480px) {
+		display: none;
+	}
+	ul.menu {
+
+		li {
+			margin: 0 0 1.5rem;
+			list-style: none;
+			padding: 0;
+			a {
+				color: $dark;
+				font-weight: $bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				&:hover {
+					color: $darkblue;
+				}
+			}
+		}
+	}
+}
+
+#block-views-tweets-block {
+	width: 33.5%;
+	.item-list ul li {
+	    margin: 0 7.5rem 4rem 0;
+	    padding: 0;
+	}
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+#block-menu-menu-social-menu {
+	width: 19.5%;
+	@media screen and (max-width: 768px) {
+		width: 31.4%;
+	}
+	@media screen and (max-width: 480px) {
+		width: 100%;
+		padding-bottom: 34px;
+	}
+	ul.menu {
+		li {
+			margin: 0 0 1.5rem;
+			list-style: none;
+			a {
+				font-weight: $normal;
+				position: relative;
+				padding-left: 44px;
+				&:before {
+					content: "shim";
+					color: transparent;
+					overflow: hidden;
+					height: 3rem;
+					position: absolute;
+					left: 3rem;
+					border-left: 1px solid $blue;
+				}
+			}
+			&:first-of-type a {
+				background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/facebook.svg');
+				background-repeat: no-repeat;
+				background-position: 5px 7px;
+				background-size: 8px 16px;
+				display: block;
+			}
+			&:nth-child(2) a {
+				background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/twitter.svg');
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: left 9px;
+				display: block;
+			}
+			&:nth-child(3) a {
+				background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/youtube.svg');
+				background-repeat: no-repeat;
+				background-position: left 5px;
+				background-size: 16px 20px;
+				display: block;
+			}
+		}
+	}
+}
+
+#block-block-2 {
+	font-size: 1.4rem;
+	width: 22%;
+	span {
+		font-size: 1.2rem;
+	}
+	@media screen and (max-width: 768px) {
+		width: 30%;
+	}
+	@media screen and (max-width: 480px) {
+		width: 100%;
+	}
+}

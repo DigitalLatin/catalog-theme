@@ -1,0 +1,326 @@
+.page-browse {
+	h1 {
+		margin-bottom: 3.2rem;
+	}
+}
+
+.page-browse-works,
+.page-dll-work,
+.node-type-dll-work {
+	h1 {
+		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/dll-work-on-orange.svg');
+	}
+}
+
+.page-browse-manuscripts-by-repository {
+	h1 {
+		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/manuscript-on-orange.svg');
+	}
+}
+
+.page-browse-item-records,
+.node-type-repository-item {
+	h1 {
+		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/item-record-on-orange.svg');
+	}
+}
+
+.page-browse-authors,
+.node-type-author-authorities {
+	h1 {
+		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/authority-record-on-orange.svg');
+	}
+}
+
+.node-type-web-page {
+	h1 {
+		background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/webpage-on-orange.svg');
+	}
+}
+
+.page-browse-authors {
+	.page-browse .views-exposed-form .views-exposed-widget select#edit-items-per-page {
+		height: 42px;
+	}
+	.views-exposed-widgets {
+		background: #f6f7f8;
+		padding: 28px;
+		@media screen and (max-width: 740px) {
+			.views-submit-button {
+				float: left; 
+				clear: left;
+				.form-submit {
+					margin-left: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+.page-browse-works,
+.page-dll-work,
+.node-type-dll-work,
+.page-browse-manuscripts-by-repository,
+.page-browse-item-records,
+.node-type-repository-item,
+.page-browse-authors,
+.node-type-author-authorities,
+.node-type-web-page {
+	h1 {
+		margin-bottom: 3.6rem;
+		background-size: 5rem 5rem;
+		background-repeat: no-repeat;
+		background-position: left 8px;
+		padding: 1.2rem 0 1.2rem 6.4rem;
+	}
+}
+
+.page-browse {
+	.panel-col-top {
+		ul.menu {
+			@include flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+			li.leaf {
+				list-style: none;
+				width: calc(50% - 12px);
+				margin: 0 0 2.5rem;
+				padding: 0;
+				border: 1px solid $blue;
+				position: relative;
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
+				&:first-of-type {
+					background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/item-record-blue.svg');
+					background-position: 3.3rem center;
+					@media screen and (max-width: 950px) {
+						background-size: 3.3rem 4.2rem;
+					}
+				}
+				&:nth-child(2) {
+					background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/webpage-blue.svg');
+					background-position: 2.6rem center;
+					// background-position: 3.4rem center; spacing for manuscript
+					@media screen and (max-width: 950px) {
+						//background-size: 3.3rem 5.8rem;  spacing for manuscript
+						background-size: 4.4rem;
+					}
+				}
+				&:nth-child(3) {
+					background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/authority-record-blue.svg');
+					background-position: 3rem center;
+					@media screen and (max-width: 950px) {
+						background-size: 4rem 6rem;
+					}
+				}
+				&:nth-child(4) {
+					background-image: url('/dll-biblio/sites/all/themes/fionta-base-theme/images/dll-work-blue.svg');
+					background-position: 2.8rem center;
+					@media screen and (max-width: 950px) {
+						background-size: 4.2rem 4.8rem;
+					}
+				}
+				&:hover {
+					background-color: #F6F7F8;
+				}
+				
+				background-repeat: no-repeat;
+				a {
+					font-size: 3rem;
+					font-weight: 300;
+					padding: 4.4rem 3.4rem 4.4rem 14.2rem;
+					@media screen and (max-width: 950px) {
+						padding: 3.4rem 2.4rem 3.4rem 12.2rem;
+						font-size: 2.2rem;
+					}
+					display: block;
+
+					&:before {
+						width: 11rem;
+						display: block;
+						height: 5rem;
+						content: 'icon';
+						color: transparent;
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						border-right: 1px solid $blue;
+						@media screen and (max-width: 950px) {
+							width: 10rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-browse {
+	.views-widget-filter-search_api_views_fulltext label {
+		text-transform: uppercase;
+	}
+
+	.views-exposed-widgets {
+	    margin-bottom: 4rem;
+	}
+
+	.views-exposed-form .views-exposed-widget {
+		padding: 0;
+		input.form-text {
+			font-size: 1.5rem;
+			border-color: #B9BFC4;
+			padding: 0.8rem 1.7rem;
+		}
+		.form-submit {
+			margin-top: 2.5rem;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			background-color: $blue;
+			color: $white;
+			padding: 0.8rem 1.7rem;
+			margin-left: 1rem;
+		}
+		#edit-reset {
+			background-color: #DBDEE1;
+			border-color: #DBDEE1;
+			color: #315375;
+		}
+		select#edit-items-per-page {
+			border: 1px solid #B9BFC4;
+			font-size: 15px;
+			padding: 1rem 1.7rem;
+			font-family: lato;
+			height: 42px;
+			background: #fff;
+		}
+		.form-item-items-per-page {
+			margin-left: 2rem;
+			@media screen and (max-width: 542px) {
+				margin-left: 0;
+				float: left;
+				clear: left;
+			}
+		}
+	}
+}
+
+.view-browse-item-records {
+
+	.views-label {
+		color: $darkblue;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.views-row {
+		padding: 0.8rem 1.5rem 1rem;
+	}
+	.views-row-odd {
+		background: $lightgrey;
+	}
+	.views-field {
+		margin-bottom: 1rem;
+	}
+}
+
+.view-browse-works {
+	table {
+		width: 100%;
+		line-height: 1.8rem;
+	}
+	th {
+		color: $darkblue;
+		text-transform: uppercase;
+		font-weight: $bold;
+		padding-bottom: 0.8rem;
+		position: relative;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+		a {
+			color: $darkblue;
+			&:after {
+				content: ".";
+				color: transparent;
+				width: 10px;
+				height: 6px;
+				background-image: url(/dll-biblio/sites/all/themes/fionta-base-theme/images/down-arrow.png);
+				background-repeat: no-repeat;
+    			background-size: 10px 6px;
+    		    position: absolute;
+    			top: 0.6rem;
+				margin-left: 0.4rem;
+			}
+			img {
+				display: none;
+			}
+		}
+	}
+	th.views-field-title {
+		padding: 0 0 0 1.5rem;
+	}
+	tr.even, 
+	tr.odd {
+		border-bottom: none;
+		background: $lightgrey;
+		padding: 0;
+	}
+
+	
+	td {
+		padding: 0.8rem 1.5rem 1rem 0;
+		@media screen and (max-width: 768px) {
+			padding: 0.8rem 1.5rem 1rem;
+			width: calc(100% - 3rem);
+			display: block;
+		}
+	}
+		td.views-field-title {
+			padding: 0.8rem 1.5rem 1rem;
+			@media screen and (max-width: 768px) {
+				&:before {
+					content: 'Title: ';
+					font-weight: 600;
+					color: $dark;
+				}
+				a {
+					display: inline;
+					
+				}
+			}
+		}
+		@media screen and (max-width: 768px) {
+			td.views-field-field-author-1 {
+				&:before {
+					content: 'DLL Author: ';
+					font-weight: 600;
+					color: $dark;
+				}
+				a {
+					display: inline;
+					
+				}
+			}
+			td.views-field-field-time-period-authorities {
+				&:before {
+					content: 'Time Period: ';
+					font-weight: 600;
+					color: $dark;
+				}
+				a {
+					display: inline;
+					
+				}
+			}
+		}
+	tr.even {
+		background: $white;
+	}
+
+	td.active {
+		background: none;
+	}
+}

@@ -1,0 +1,16 @@
+name = Fionta Base Theme
+description = Lightweight theme to be easily customized
+core = 7.x
+engine = phptemplate
+screenshot = logo.png
+
+stylesheets[all][] = css/styles.css
+
+scripts[] = js/sitewide.js
+scripts[] = js/homepage.js
+scripts[] = js/menu.js
+
+regions[noregions] = This theme has no configurable regions
+regions[subheader] = Subheader
+regions[content] = Content
+regions[footer]  = Footer

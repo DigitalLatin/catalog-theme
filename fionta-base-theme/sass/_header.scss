@@ -1,0 +1,159 @@
+/***************
+ Header 
+ **************/
+
+#fionta-header1 {
+	background-color: $blue;
+	height: 77px;
+}
+
+.fionta-logos {
+	margin-top: 12px;
+	float: left;
+	max-width: 250px;
+	@media (max-width: 860px) {
+		margin-left: 40px;
+	}
+	@media (max-width: 480px) {
+		margin-left: 20px;
+	}
+}
+
+
+img.fionta-logo1 {
+	float: left;
+	max-width: 193px;
+	height: auto;
+	@media (max-width: 480px) {
+		display: none; 
+	}
+}
+
+img.fionta-logo2 {
+	display: none; 
+	float: left;
+	@media (max-width: 480px) {
+		display: inline; 
+	}
+}
+
+#site-title-full {
+	display: block;
+	position: absolute;
+	left: -9999px;
+}
+
+#site-title-mobile {
+	display: none;
+}
+
+#fionta-header1-section2 {
+	width: 543px;
+	float: right;
+	@media (max-width: 860px) {
+		width: auto;
+	}
+}
+
+.header1-nav-link {
+	display: inline-block;
+	border-left: 1px solid #88CBDF;
+	height: 52px;
+	float: left;
+	padding: 25px 12px 0;
+	@media (max-width: 860px) {
+		display: none;
+	}
+}
+
+.header1-icon-link {
+  display: inline-block;
+  border-left: 1px solid #88CBDF;
+  height: 50px;
+  float: left;
+  padding: 27px 7px 0;
+}
+
+#fionta-header1-section2 .mail {
+	border-right: 1px solid #88CBDF;
+}
+
+.header1-nav-link a{
+	font-family: $lato;
+	color: #fff;
+	font-size: .83em;
+}
+
+.header1-icon-link a {
+	display: block;
+	width: 30px;
+	height: 21px;
+}
+
+.header1-icon-link.mail a {
+	background: url('../images/header-icons.png') 0 21px;
+}
+
+.header1-icon-link.search a {
+	background: url('../images/header-icons.png') 30px 21px;
+}
+
+.header1-nav-link a:hover {
+	color: #88CBDF;	
+}
+
+.header1-icon-link.mail a:hover {
+	background: url('../images/header-icons.png') 0 0;
+}
+
+.header1-icon-link.search a:hover {
+	background: url('../images/header-icons.png') 30px 0;
+}
+
+#fionta-header-menu {
+	width: calc(100% - 50px);
+	@media screen and (max-width: 860px) {
+		width: calc(100% - 60px);
+	}
+    float: left;
+    ul.links {
+    	display: -webkit-flex;
+    	display: flex;
+    	a {
+    		color: #ffffff;
+    		border-left: 1px solid #88CBDF;
+    		padding: 25px 12px 0;
+    		height: 52px;
+    		display: inline-block;
+    		font-size: .75em;
+		    text-transform: uppercase;
+		    font-weight: 500;
+    	}
+    	li {
+    		margin-right:auto;
+  			margin-left:auto;
+    	}
+    	li.first a {
+    		background: #94D6EA;
+		   	color: #005CB9;
+		}
+		li:nth-of-type(2n) a {
+			border-left: none;
+		} 
+    	li.last a {
+    		border-right: 1px solid #88CBDF;
+    		background: url('../images/icon-envelope.png');
+    		background-repeat: no-repeat;
+    		background-size: 20px 13px;
+    		color: transparent;
+    		width: 30px;
+    		background-position: center;
+    	}
+    	@media screen and (max-width: 860px) {
+    		li.menu-1057,
+    		li.menu-1058 {
+    			display: none;
+    		}
+    	}
+    }
+}

@@ -1,0 +1,478 @@
+.md-arrow-left { background: url('sites/default/files/images/slider_arrow_prev.png') no-repeat scroll 0px 0px transparent; }
+.md-arrow-right { background: url('sites/default/files/images/slider_arrow_next.png') no-repeat scroll 0px 0px transparent; }
+
+.node-type-homepage .field-item h1 {
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	margin-bottom: 23px;
+}
+
+.node-type-homepage #fionta-body1 {
+	max-width: none;
+	margin: 0;
+}
+
+.node-homepage .field-items > .field-item {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+.node-type-homepage ol li {
+	margin-bottom: 0;
+	list-style: none;
+	margin-left: 0;
+}
+
+
+/* Two-Fold Mission */
+
+.node-type-homepage #fionta-content1 .field-item ol li {
+	width: 48%;
+	float: left;
+	font: 300 1.333em/1.333em Lato,arial,sans-serif;
+	color: #535b62;
+	margin-bottom: 75px;
+	list-style: none;
+	margin-left: 0;
+}
+
+.node-type-homepage #fionta-content1 .field-item ol li:first-child {
+	margin-right: 3.8%;
+}
+
+.node-type-homepage #fionta-content1 .field-item ol li:before {
+	font: 200 2.5em/1em Lato,arial,sans-serif;
+	color: #94d6ea;
+	border-right: 1px solid;
+	padding: 28px 30px 0 0;
+	margin-right: 25px;
+	display: block;
+	height: 77px;
+	width: 30px;
+	float: left;
+}
+
+.node-type-homepage #fionta-content1 .field-item ol li:first-child:before {
+	content: '1';
+}
+
+.node-type-homepage #fionta-content1 .field-item ol li:last-child:before {
+	content: '2';
+}
+
+/* 1st Full-width image */
+
+.node-type-homepage .field-items .field-item:nth-child(2) {
+	max-width: 100%;
+	width: 100%;
+	background-image: url(/sites/all/themes/fionta_base_theme/images/cras-justo.jpg);
+	background-size: cover;
+	background-color: gray;
+	background-position: 0 0;
+	height: 430px;
+	margin-top: 200px;
+}
+
+.node-type-homepage .fionta-home-image-container:before {
+	content: url(/sites/all/themes/fionta_base_theme/images/arrow-bottom.png);
+	position: absolute;
+	top: -5px;
+	left: 45%;
+}
+
+.node-type-homepage .fionta-home-image-container:after {
+	content: url(/sites/all/themes/fionta_base_theme/images/arrow-top.png);
+	position: absolute;
+	bottom: -5px;
+	left: 45%;
+}
+
+.fionta-home-image-container {
+	height: 430px;
+	position: relative;
+}
+
+.fionta-home-image-container p {
+	color: #fff;
+	text-align: center;
+	padding: 183px 205px 0;
+	font-size: 2.5em;
+	line-height: 1.5em;
+}
+
+/* The Digital Latin Library */
+
+#fionta-home-middle {
+	border-bottom: 2px solid #eee;
+	/*height: 508px;*/
+}
+
+#fionta-home-middle img {
+	float: right;
+	height: auto!important;
+	width: 337px!important;
+	margin-right: 90px;
+	margin-left: 70px;
+}
+
+#fionta-home-middle p {
+	font: 300 1.333em/1.333em Lato,arial,sans-serif;
+	color: #535b62;
+}
+
+.home-button-1 {
+	font-size: .6em;
+	font-weight: 600;
+	margin: 20px;
+	padding: 12px 25px;
+	border: 1px solid #005cb9;
+	display: inline-block;
+ }
+ 
+.home-button-1:hover {
+	color: #fff;
+	background-color: #005cb9;
+}
+
+/* Spotlight */
+
+#fionta-home-spotlight {
+	margin-right: 95px;
+	margin-top: 65px;
+}
+
+#fionta-home-spotlight img {
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 60px;
+	/*height: auto!important;
+	width: 340px!important;*/
+}
+
+#fionta-home-spotlight h1 {
+	text-align: left;
+    line-height: .5em;
+ }
+ 
+#fionta-home-spotlight p {
+	margin-bottom: 28px;
+	font: 300 1.2em/1.3em Lato,arial,sans-serif;
+	color: #535b62;
+}
+
+.field-items .field-item:nth-child(5) {
+	max-width: 100%;
+	width: 100%;
+	background-image: url(/sites/all/themes/fionta_base_theme/images/aenean.jpg);
+	background-size: cover;
+	background-color: gray;
+	background-position: 0 0;
+	height: 430px;
+	margin-top: 85px;
+}
+
+/* Project Updates */
+
+#fionta-home-updates .view-articles .views-row {
+	margin-bottom: 45px;
+}
+
+#fionta-home-updates .view-articles .views-row-1 {
+	float: left;
+	width: 44.5%;
+	margin-right: 11.5%;
+}
+
+#fionta-home-updates .view-articles .views-row-2 {
+	width: 43.5%;
+	float: left;
+}
+
+#fionta-home-updates .date-display-single {
+  font: 600 .9em/2em Lato,arial,sans-serif;
+  color: #a33701;
+}
+
+#fionta-home-updates .posted-in-blog-link {
+	font-style: italic;
+	font-size: .9em;
+}
+
+#fionta-home-updates h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 10px 0;
+}
+
+#fionta-home-updates .views-field-body .field-content {
+	font: 300 1.2em/1.3em Lato,arial,sans-serif;
+}
+
+#fionta-home-updates .views-field-view-node a {
+	display: inline-block;
+	font-size: .733em;
+	color: #fff;
+	background-color: #94d6ea;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+
+#fionta-home-updates .views-field-view-node a:hover {
+	background-color: #71a8b8;
+}
+
+/* Blog */
+
+.node-homepage .field-items > .field-item:last-child {
+	max-width: 100%;
+	margin: 0;	
+	background-color: #2f5377;
+	clear: both;
+}
+
+#fionta-home-blog {
+	color: #fff;
+	max-width: 1060px;
+	margin: 0 auto;
+	padding-top: 1px;
+	padding-bottom: 95px;
+}
+
+#fionta-home-blog h1 {
+	color: #fff;
+}
+
+#fionta-home-blog a {
+	color: #94e6da;
+}
+
+#fionta-home-blog .views-row {
+	width: 28.3%;
+	float: left;
+}
+
+#fionta-home-blog .views-row-1,
+#fionta-home-blog .views-row-2 {
+	margin-right: 7.5%;
+}
+
+#fionta-home-blog  h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 15px 0;
+}
+
+#fionta-home-blog  p {
+	font: 300 1em/1.5em Lato,arial,sans-serif;
+}
+
+#fionta-home-blog .posted-in-blog-link {
+	font: 100 italic 1em/2em Lato;
+}
+
+#fionta-home-blog .views-field-field-author,
+#fionta-home-blog .views-field-field-author div,
+#fionta-home-blog .views-field-field-category,
+#fionta-home-blog .views-field-field-category div {
+	display: inline;
+	font: 100 italic 1em/1em Lato;
+}
+
+/* Share */
+
+.node-type-homepage #share-this{
+	max-width: 1060px;
+	margin: 0 auto;
+	margin-top: -60px;
+	margin-bottom: 24px;
+	color: #fff;
+	font-size: .85em;
+	width: auto;
+	height: auto;
+}
+
+.node-type-homepage #share-this .stLarge {
+	background: url('../images/dll-share.png')!important;
+	width: 36px!important;
+	padding-right: 6px;
+}
+
+.node-type-homepage #share-this .stButton {
+	vertical-align: middle;
+}
+
+/************
+Responsive
+************/
+
+@media (max-width: 768px) {
+	.node-type-homepage .field-item ol li:first-child {
+		margin-right: auto;
+	}
+	.node-type-homepage .field-item ol li {		
+		float: none;
+		width: 67%;
+		margin: 0 auto 67px;
+	}
+	.fionta-home-image-container {
+		margin-top: 82px;
+	}
+	.fionta-home-image-container p{
+		margin-top: 82px;
+	}
+	#fionta-home-image-1,
+	#fionta-home-image-2	{
+		left: 0;
+		width: 100%;
+	}
+	.fionta-home-image-container:after,
+	.fionta-home-image-container:before {
+		left: 37%;
+	}
+	.fionta-home-image-container p {
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#fionta-home-middle {
+		height: auto;
+	}
+	#fionta-home-middle img {
+		display: none;
+	}
+	#fionta-home-middle p,
+	#fionta-home-spotlight{
+		margin-left: 40px;
+		margin-right: 40px; 
+	}
+	#fionta-home-middle h1,
+	#fionta-home-spotlight h1 {
+		line-height: 1em;
+		clear: both;
+	}
+	#fionta-home-updates .view-articles .views-row-1 {
+		width: 39%;
+		margin-left: 40px;
+	}
+	#fionta-home-updates .view-articles .views-row-2 {
+		width: 39%;
+	}
+	#fionta-home-blog .view-articles .views-row-1 {
+		margin-left: 40px;
+		margin-right: 11%;
+		width: 39%;
+	}
+	#fionta-home-blog .view-articles .views-row-2 {
+		width: 39%;
+		margin-right: 0;
+	}
+	#fionta-home-blog .views-row-last {
+		display: none;
+	}
+	#fionta-home-blog .views-row {
+		width: 40.5%;
+	}
+	.node-type-homepage #share-this {
+		  margin-left: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.node-type-homepage #fionta-content1 .field-item h1 {
+		line-height: 1em;
+	}
+	.node-type-homepage #fionta-content1 .field-item ol li {
+		font-size: 1.1em;
+		width: 90%;
+		margin-bottom: 20px;
+		  margin-left: 10px;
+	}
+	.node-type-homepage #fionta-content1 .field-item ol li:first-child {
+		margin-top:20px;
+	}
+	.node-type-homepage #fionta-content1 .field-item ol li:before {
+		padding: 45px 19px 0 0;
+		margin-right: 24px;
+		margin-bottom: 50px;
+	}
+	.node-type-homepage #fionta-content1 .field-item ol li:last-child:before {
+		  padding-top: 20px;
+	}
+	.node-type-homepage .fionta-home-image-container:after,
+	.node-type-homepage .fionta-home-image-container:before {
+		left: 25%;
+	}
+	.node-type-homepage .field-items .field-item:nth-child(2){
+		clear:both;
+	}
+	.node-type-homepage .fionta-home-image-container,
+	.node-type-homepage .field-items .field-item:nth-child(2),
+	.node-type-homepage .field-items .field-item:nth-child(5){
+		height: 375px;
+	}
+	.node-type-homepage .field-items .field-item:nth-child(2),
+	.node-type-homepage .field-items .field-item:nth-child(5){
+		margin-top: 0;
+	}
+	.node-type-homepage .fionta-home-image-container {
+		  margin-top: 0;
+	}
+	#fionta-home-image-1 p {
+		padding-top: 160px;
+		font-size: 2em;
+	}
+	#fionta-home-middle p,
+	#fionta-home-spotlight p	{
+		font-size: 1.1em;
+	}
+	#fionta-home-middle p,
+	#fionta-home-spotlight {
+		margin-left: 20px;
+		margin-right: 20px; 
+	}
+	.home-button-1 {
+		margin: 15px 0 0;
+		margin-left: 25%;
+	}	
+	#fionta-home-spotlight h1 {
+		text-align: center;
+	}
+	#fionta-home-spotlight img { 
+		width: 120%!important;
+		margin: 0 0 35px -20px;
+	}
+	#fionta-home-image-2 p  {
+		padding-top: 65px;
+		width: 90%;
+		font-size: 2em;
+	}
+	#fionta-home-updates .view-articles .views-row-1 {
+		margin: 0 20px 45px;
+		width:90%
+	}
+	#fionta-home-updates .view-articles .views-row-2 {
+		display: none;
+	}
+	#fionta-home-blog .view-articles .views-row-1 {
+		margin: 0 20px 0;
+		width:90%
+	}
+	#fionta-home-blog .views-field-field-date-published {
+		margin-bottom: 4px;
+	}
+	#fionta-home-blog .view-articles .views-row-2 {
+		display: none;
+	}
+	#fionta-home-blog .posted-in-blog-link,
+	#fionta-home-blog .views-label-field-author,
+	#fionta-home-blog .views-field-field-author .field-content,
+	#fionta-home-blog .views-label-field-category,
+	#fionta-home-blog .views-field-field-category a {
+		font: 400 italic 1em/1.5em Lato;
+	}
+	.node-type-homepage #share-this {
+		  margin-left: 20px;
+	}
+}

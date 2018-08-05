@@ -1,0 +1,173 @@
+/*****************
+General
+******************/
+
+.fionta-wrapper {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+.body-wrap {
+	width: 100%;
+	@include max-width;
+	width: calc(100% - 12rem);
+	@media (max-width: 768px) {
+		margin: 0 40px;
+		padding-left: 0;
+		padding-right: 0;
+		width: calc(100% - 8rem);
+	}
+	@media (max-width: 480px) {
+		margin: 0 20px;
+		padding-left: 0;
+		padding-right: 0;
+		width: calc(100% - 4rem);
+	}
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+
+/*****************
+Page
+******************/
+
+
+.easy-breadcrumb {
+	margin-top: 35px;
+	@media (max-width: 480px) {
+		display: none;
+	}
+}
+
+.field.field-name-submitted-by, .field.field-name-field-date-published {
+	margin-bottom: 20px;
+}
+
+.field-name-field-header-image {
+	max-width: 690px;
+	width: 33%;
+	float: left;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.field-name-body {
+	max-width: 690px;
+	width: 66%;
+	float: left;
+	@media (max-width: 768px) {
+		max-width: none;
+		width: 100%;
+		float: none;
+	}
+}
+
+.field-name-field-header-image img {
+	border:thin #000000 solid;
+	margin-bottom: 30px;
+}
+
+.node-type-page h1 {
+	margin-bottom: 20px;
+	@media (max-width: 480px) {
+		line-height: 1em;
+		margin-bottom: 30px;
+	}
+}
+
+/* individual information pages */
+.node-type-author-authorities,
+.node-type-repository-item,
+.page-taxonomy {
+	.field-type-text,
+	.field-type-taxonomy-term-reference,
+	.field-type-computed,
+	.field-type-link-field,
+	.field-type-serial,
+	.field-type-entityreference,
+	.field-type-text-long {
+		margin-bottom: 1.2rem;
+		.field-label {
+			text-transform: uppercase;
+		}
+	}
+}
+
+/***********
+ Views 
+ ***********/
+
+.view-header h3 {
+	padding-bottom: 20px;
+}
+
+/* Layouts with sidebars */
+.node-type-page,
+.page-search,
+.node-type-repository-item,
+.node-type-manuscript,
+.node-type-web-page,
+.page-dll-work {
+	.panel-col-first,
+	.panels-flexible-region-first {
+		width: 71.6%;
+	    @media screen and (max-width: 768px) {
+		    width: 100%;
+		   	-webkit-order: 2;
+		   	order: 2;
+		}
+		.inside {
+	    	margin: 0 10.6rem 10rem 0;
+	    	@media screen and (max-width: 1068px) {
+		    	margin: 0 6.6rem 10rem 0;
+		    }
+		   	@media screen and (max-width: 768px) {
+		   		margin: 0;
+		   	}
+	   	}
+	   	.field-name-body {
+	   		width: auto;
+	   	}
+	}
+	.panel-col-last,
+    .panels-flexible-region-last {
+		width: 28.4%;
+		@media screen and (max-width: 768px) {
+	    	width: 100%;
+	 	  	-webkit-order: 1;
+	    	order: 1;
+		}
+		.pane-recently-read {
+			background: rgba(148,214,234,0.2);
+			margin: 0 0 2rem;
+			padding: 2.8rem 2.5rem;
+			@media screen and (max-width: 768px) {
+				background: rgba(148,214,234,0.2);
+				padding: 2.5rem;
+			}
+			.pane-content {
+			    margin-bottom: 1.3rem;
+		  		p {
+		  			margin-bottom: 0;
+	    		}
+			    @media screen and (max-width: 768px) {
+					margin-bottom: 0;
+			    	padding-bottom: 1.3rem;
+			   	}
+		 	}
+		 	h2.pane-title {
+		 		margin-bottom: 2rem;
+		 	}
+			.item-list ul li {
+	    		margin: 0 0 1.3rem;
+			}
+		}
+	}  
+}
+.page-search .panels-flexible-region-last {
+	margin-top: -3.4rem;
+	@media screen and (max-width: 768px) {
+	    margin-top: 0;
+	}
+}
