@@ -3507,6 +3507,11 @@ News & Events/Blog
   border: none;
 }
 
+/* Adding a style to handle the updates on the front page of the catalog. */
+#catalog-updates div.view-content {
+    padding-top: 20px;
+}
+
 /***************
 Search Page
 ***************/
