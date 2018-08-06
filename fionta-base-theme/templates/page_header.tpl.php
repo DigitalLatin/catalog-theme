@@ -2,7 +2,7 @@
 	<div class="fionta-wrapper">
 	<div id="fionta-header1-section1">
 		<div class="fionta-logos">
-			<a id="logo1" href="/dll-biblio/">
+			<a id="logo1" href="https://catalog.digitallatin.org">
 				<img class="fionta-logo1" src="<?php echo $GLOBALS['base_path'].$GLOBALS['theme_path'] ?>/images/DLL-logo.png"/>
 				<img class="fionta-logo2" src="<?php echo $GLOBALS['base_path'].$GLOBALS['theme_path'] ?>/images/DLL-mobile-logo.png"/>
 				<span id='site-title-full'>Digital <span id='site-title-full-latin' style='font-weight:strong'>Latin</span> Library</span>
