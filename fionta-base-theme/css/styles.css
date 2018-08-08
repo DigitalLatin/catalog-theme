@@ -205,6 +205,12 @@ Page
   }
 }
 
+/* Style to make ul show a disc in certain instances */
+.field-name-body ul,
+.browse-page ul {
+    list-style: disc;
+    padding-left: 40px;
+}
 /* individual information pages */
 /* line 83, ../sass/_general.scss */
 .node-type-author-authorities .field-type-text,
@@ -624,6 +630,7 @@ h4 {
 /* line 59, ../sass/_typography.scss */
 p {
   margin-bottom: 1.5rem;
+  font-weight: normal;
 }
 
 /* line 63, ../sass/_typography.scss */
@@ -3065,7 +3072,7 @@ a.anchor {
 }
 /* line 96, ../sass/_browse.scss */
 .page-browse .panel-col-top ul.menu li.leaf:first-of-type {
-  background-image: url("../images/item-record-blue.svg");
+  background-image: url("../images/authority-record-blue.svg");
   background-position: 3.3rem center;
 }
 @media screen and (max-width: 950px) {
@@ -3076,7 +3083,7 @@ a.anchor {
 }
 /* line 103, ../sass/_browse.scss */
 .page-browse .panel-col-top ul.menu li.leaf:nth-child(2) {
-  background-image: url("../images/webpage-blue.svg");
+  background-image: url("../images/dll-work-blue.svg");
   background-position: 2.6rem center;
 }
 @media screen and (max-width: 950px) {
@@ -3087,7 +3094,7 @@ a.anchor {
 }
 /* line 112, ../sass/_browse.scss */
 .page-browse .panel-col-top ul.menu li.leaf:nth-child(3) {
-  background-image: url("../images/authority-record-blue.svg");
+  background-image: url("../images/item-record-blue.svg");
   background-position: 3rem center;
 }
 @media screen and (max-width: 950px) {
@@ -3098,7 +3105,7 @@ a.anchor {
 }
 /* line 119, ../sass/_browse.scss */
 .page-browse .panel-col-top ul.menu li.leaf:nth-child(4) {
-  background-image: url("../images/dll-work-blue.svg");
+  background-image: url("../images/webpage-blue.svg");
   background-position: 2.8rem center;
 }
 @media screen and (max-width: 950px) {
