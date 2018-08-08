@@ -205,6 +205,13 @@ Page
   }
 }
 
+/*  Style for author authority record header */
+#authority-record h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: thin solid black;
+}
+
 /* Style to make ul show a disc in certain instances */
 .field-name-body ul,
 .browse-page ul {
@@ -1767,7 +1774,8 @@ sidr ul li.active > span,
 }
 
 /* line 2, ../sass/_dll-author.scss */
-.page-dll-author h1 {
+.page-dll-author h1,
+.page-dll-work h1 {
   margin-bottom: 2rem;
   background-image: url("../images/author-page-on-orange.svg");
   background-size: 5rem 5rem;
@@ -1776,18 +1784,21 @@ sidr ul li.active > span,
   padding-left: 64px;
 }
 /* line 9, ../sass/_dll-author.scss */
-.page-dll-author h1 span {
+.page-dll-author h1 span,
+.page-dll-work h1 span {
   font-weight: 300;
   font-size: 2rem;
   display: block;
 }
 /* line 17, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-separator {
+.page-dll-author .panel-2col .panel-separator,
+.page-dll-work .panel-2col .panel-separator {
   display: none;
 }
 @media screen and (max-width: 768px) {
   /* line 16, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col {
+  .page-dll-author .panel-2col,
+  .page-dll-work .panel-2col{
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
@@ -1795,55 +1806,65 @@ sidr ul li.active > span,
   }
 }
 /* line 25, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-first {
+.page-dll-author .panel-2col .panel-col-first,
+.page-dll-work .panel-2col .panel-col-first {
   width: 71.6%;
 }
 @media screen and (max-width: 768px) {
   /* line 25, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-first {
+  .page-dll-author .panel-2col .panel-col-first,
+  .page-dll-work .panel-2col .panel-col-first {
     width: 100%;
     -webkit-order: 2;
     order: 2;
   }
   /* line 31, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-first .pane-block-4 {
+  .page-dll-author .panel-2col .panel-col-first .pane-block-4,
+  .page-dll-work .panel-2col .panel-col-first .pane-block-4 {
     display: none;
   }
 }
 /* line 35, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-first .inside {
+.page-dll-author .panel-2col .panel-col-first .inside,
+.page-dll-work .panel-2col .panel-col-first .inside {
   margin: 0 10.6rem 10rem 0;
 }
 @media screen and (max-width: 1068px) {
   /* line 35, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-first .inside {
+  .page-dll-author .panel-2col .panel-col-first .inside,
+  .page-dll-work .panel-2col .panel-col-first .inside {
     margin: 0 6.6rem 10rem 0;
   }
 }
 @media screen and (max-width: 768px) {
   /* line 35, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-first .inside {
+  .page-dll-author .panel-2col .panel-col-first .inside,
+  .page-dll-work .panel-2col .panel-col-first .inside {
     margin: 0;
   }
 }
 /* line 44, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-first h2.pane-title {
+.page-dll-author .panel-2col .panel-col-first h2.pane-title,
+.page-dll-work .panel-2col .panel-col-first h2.pane-title {
   border-bottom: 1px solid #d9d9d9;
   padding: 0 0 1.6rem 4.7rem;
   margin-bottom: 1.4rem;
 }
 /* line 49, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-first #jump-menu {
+.page-dll-author .panel-2col .panel-col-first #jump-menu,
+.page-dll-work .panel-2col .panel-col-first #jump-menu {
   margin-bottom: 2.5rem;
 }
 /* line 53, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last {
+.page-dll-author .panel-2col .panel-col-last,
+.page-dll-work .panel-2col .panel-col-last {
   width: 28.4%;
   margin-top: -8.4rem;
 }
 @media screen and (max-width: 768px) {
   /* line 53, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last {
+  .page-dll-author .panel-2col .panel-col-last,
+  .page-dll-work .panel-2col .panel-col-last {
     width: 100%;
     -webkit-order: 1;
     order: 1;
@@ -1851,12 +1872,14 @@ sidr ul li.active > span,
   }
 }
 /* line 63, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .pane-block-4 {
+.page-dll-author .panel-2col .panel-col-last .pane-block-4,
+.page-dll-work .panel-2col .panel-col-last .pane-block-4 {
   display: none;
 }
 @media screen and (max-width: 768px) {
   /* line 63, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last .pane-block-4 {
+  .page-dll-author .panel-2col .panel-col-last .pane-block-4,
+  .page-dll-work .panel-2col .panel-col-last .pane-block-4 {
     display: block;
   }
 }
@@ -1868,7 +1891,8 @@ sidr ul li.active > span,
   position: relative;
 }
 /* line 75, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-block-5 {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -1877,7 +1901,8 @@ sidr ul li.active > span,
   /* Add animation (fade in the popup) */
 }
 /* line 81, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-block-5 .popup {
   position: relative;
   cursor: pointer;
   background: #A03914;
@@ -1891,7 +1916,8 @@ sidr ul li.active > span,
   line-height: 15px;
 }
 /* line 93, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup .popuptext {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup .popuptext,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-block-5 .popup .popuptext {
   visibility: hidden;
   width: 160px;
   background-color: #DCDFE2;
@@ -1906,7 +1932,8 @@ sidr ul li.active > span,
   color: #315375;
 }
 /* line 107, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup .popuptext:after {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup .popuptext:after,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-block-5 .popup .popuptext:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -1917,7 +1944,8 @@ sidr ul li.active > span,
   border-color: #DCDFE2 transparent transparent transparent;
 }
 /* line 118, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup .show {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-block-5 .popup .show,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-block-5 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -1940,24 +1968,30 @@ sidr ul li.active > span,
 }
 @media screen and (max-width: 768px) {
   /* line 70, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last .inside {
+  .page-dll-author .panel-2col .panel-col-last .inside,
+  .page-dll-work .panel-2col .panel-col-last .inside {
     background: none;
     padding: 0;
     margin: 0 0 2rem;
   }
   /* line 139, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last .inside .panel-pane {
+  .page-dll-author .panel-2col .panel-col-last .inside .panel-pane,
+  .page-dll-work .panel-2col .panel-col-last .inside .panel-pane {
     background: rgba(148, 214, 234, 0.2);
     padding: 0 2.5rem;
   }
   /* line 143, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last .inside .pane-block-4 {
+  .page-dll-author .panel-2col .panel-col-last .inside .pane-block-4,
+  .page-dll-work .panel-2col .panel-col-last .inside .pane-block-4 {
     background: none;
     padding: 0;
   }
 }
 /* line 148, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-node-field-authorized-name {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-node-field-authorized-name,
+.page-dll-author .panel-2col .panel-col-last .inside .pane-node-field-authorized-name,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-node-field-authorized-name,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-node-field-authorized-name {
   background-image: url("../images/authority-record-on-blue.svg");
   background-size: 3.5rem 3.5rem;
   background-repeat: no-repeat;
@@ -1966,29 +2000,34 @@ sidr ul li.active > span,
 }
 @media screen and (max-width: 768px) {
   /* line 148, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last .inside .pane-node-field-authorized-name {
+  .page-dll-author .panel-2col .panel-col-last .inside .pane-node-field-authorized-name,
+  .page-dll-work .panel-2col .panel-col-last .inside .pane-node-field-authorized-name {
     padding-top: 2.5rem;
     background-position: 2.5rem 2.5rem;
     padding-left: 7rem;
   }
 }
 /* line 160, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-content {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-content,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-content {
   margin-bottom: 1.3rem;
 }
 /* line 162, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last .inside .pane-content p {
+.page-dll-author .panel-2col .panel-col-last .inside .pane-content p,
+.page-dll-work .panel-2col .panel-col-last .inside .pane-content p {
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   /* line 160, ../sass/_dll-author.scss */
-  .page-dll-author .panel-2col .panel-col-last .inside .pane-content {
+  .page-dll-author .panel-2col .panel-col-last .inside .pane-content,
+  .page-dll-work .panel-2col .panel-col-last .inside .pane-content {
     margin-bottom: 0;
     padding-bottom: 1.3rem;
   }
 }
 /* line 171, ../sass/_dll-author.scss */
-.page-dll-author .panel-2col .panel-col-last h2.pane-title {
+.page-dll-author .panel-2col .panel-col-last h2.pane-title,
+.page-dll-work .panel-2col .panel-col-last h2.pane-title {
   color: #535B62;
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -1996,6 +2035,7 @@ sidr ul li.active > span,
   font-weight: 700;
 }
 /* line 183, ../sass/_dll-author.scss */
+.page-dll-author .pane-block-4 li,
 .page-dll-author .pane-block-4 li {
   font-size: 1.4rem;
   line-height: 1.7rem;
@@ -2004,31 +2044,37 @@ sidr ul li.active > span,
   display: inline;
 }
 /* line 189, ../sass/_dll-author.scss */
-.page-dll-author .pane-block-4 li:first-of-type, .page-dll-author .pane-block-4 li:last-of-type {
+.page-dll-author .pane-block-4 li:first-of-type, .page-dll-author .pane-block-4 li:last-of-type,
+.page-dll-work .pane-block-4 li:first-of-type, .page-dll-author .pane-block-4 li:last-of-type {
   border-right: none;
   border-right: none;
 }
 /* line 194, ../sass/_dll-author.scss */
-.page-dll-author .pane-block-4 li a {
+.page-dll-author .pane-block-4 li a,
+.page-dll-work .pane-block-4 li a {
   color: #315375;
   font-weight: 400;
   margin: 0 0.8rem;
 }
 /* line 203, ../sass/_dll-author.scss */
-.page-dll-author .ctools-collapsible-container {
+.page-dll-author .ctools-collapsible-container,
+.page-dll-work .ctools-collapsible-container {
   position: relative;
   margin-bottom: 6rem;
   padding-top: 2rem;
 }
 @media screen and (max-width: 768px) {
   /* line 203, ../sass/_dll-author.scss */
-  .page-dll-author .ctools-collapsible-container {
+  .page-dll-author .ctools-collapsible-container,
+  .page-dll-work .ctools-collapsible-container {
     margin-bottom: 2rem;
   }
 }
 /* line 211, ../sass/_dll-author.scss */
 .page-dll-author .ctools-collapsible-container .ctools-toggle,
-.page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed {
+.page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed,
+.page-dll-work .ctools-collapsible-container .ctools-toggle,
+.page-dll-work .ctools-collapsible-container .ctools-toggle-collapsed {
   position: absolute;
   right: 3rem;
   top: 0;
@@ -2043,7 +2089,9 @@ sidr ul li.active > span,
 @media screen and (max-width: 768px) {
   /* line 211, ../sass/_dll-author.scss */
   .page-dll-author .ctools-collapsible-container .ctools-toggle,
-  .page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed {
+  .page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed,
+  .page-dll-work .ctools-collapsible-container .ctools-toggle,
+  .page-dll-work .ctools-collapsible-container .ctools-toggle-collapsed {
     background: rgba(185, 191, 197, 0.5);
     width: 2.4rem;
     height: 2.4rem;
@@ -2051,8 +2099,9 @@ sidr ul li.active > span,
   }
 }
 /* line 231, ../sass/_dll-author.scss */
-.page-dll-author .ctools-collapsible-container .ctools-toggle:before {
-  content: ".";
+.page-dll-author .ctools-collapsible-container .ctools-toggle:before,
+.page-dll-work .ctools-collapsible-container .ctools-toggle:before{
+  content: "."; 
   color: transparent;
   background: url("../images/minus.svg");
   width: 1rem;
@@ -2066,12 +2115,14 @@ sidr ul li.active > span,
 }
 @media screen and (max-width: 768px) {
   /* line 231, ../sass/_dll-author.scss */
-  .page-dll-author .ctools-collapsible-container .ctools-toggle:before {
+  .page-dll-author .ctools-collapsible-container .ctools-toggle:before,
+  .page-dll-work .ctools-collapsible-container .ctools-toggle:before {
     top: 0.7rem;
   }
 }
 /* line 247, ../sass/_dll-author.scss */
-.page-dll-author .ctools-collapsible-container .ctools-toggle:after {
+.page-dll-author .ctools-collapsible-container .ctools-toggle:after,
+.page-dll-work .ctools-collapsible-container .ctools-toggle:after {
   width: 13.2rem;
   content: 'Collapse Section';
   background: rgba(185, 191, 197, 0.5);
@@ -2081,12 +2132,14 @@ sidr ul li.active > span,
 }
 @media screen and (max-width: 768px) {
   /* line 247, ../sass/_dll-author.scss */
-  .page-dll-author .ctools-collapsible-container .ctools-toggle:after {
+  .page-dll-author .ctools-collapsible-container .ctools-toggle:after,
+  .page-dll-work .ctools-collapsible-container .ctools-toggle:after {
     content: none;
   }
 }
 /* line 261, ../sass/_dll-author.scss */
-.page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed:before {
+.page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed:before,
+.page-dll-work .ctools-collapsible-container .ctools-toggle-collapsed:before {
   content: ".";
   color: transparent;
   background: url("../images/plus.svg");
@@ -2100,7 +2153,8 @@ sidr ul li.active > span,
   top: 3rem;
 }
 /* line 274, ../sass/_dll-author.scss */
-.page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed:after {
+.page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed:after,
+.page-dll-work .ctools-collapsible-container .ctools-toggle-collapsed:after {
   width: 13.2rem;
   content: 'Expand Section';
   background: rgba(185, 191, 197, 0.5);
@@ -2109,17 +2163,20 @@ sidr ul li.active > span,
 }
 @media screen and (max-width: 768px) {
   /* line 274, ../sass/_dll-author.scss */
-  .page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed:after {
+  .page-dll-author .ctools-collapsible-container .ctools-toggle-collapsed:after,
+  .page-dll-work .ctools-collapsible-container .ctools-toggle-collapsed:after {
     content: none;
   }
 }
 /* line 288, ../sass/_dll-author.scss */
-.page-dll-author table {
+.page-dll-author table,
+.page-dll-work table {
   width: 100%;
   line-height: 1.8rem;
 }
 /* line 292, ../sass/_dll-author.scss */
-.page-dll-author th {
+.page-dll-author th,
+.page-dll-work th {
   color: #315375;
   text-transform: uppercase;
   font-weight: 700;
@@ -2128,16 +2185,19 @@ sidr ul li.active > span,
 }
 @media screen and (max-width: 768px) {
   /* line 292, ../sass/_dll-author.scss */
-  .page-dll-author th {
+  .page-dll-author th,
+  .page-dll-work th {
     display: none;
   }
 }
 /* line 301, ../sass/_dll-author.scss */
-.page-dll-author th a {
+.page-dll-author th a,
+.page-dll-work th a {
   color: #315375;
 }
 /* line 303, ../sass/_dll-author.scss */
-.page-dll-author th a:after {
+.page-dll-author th a:after,
+.page-dll-work th a:after{
   content: ".";
   color: transparent;
   width: 10px;
@@ -2150,16 +2210,20 @@ sidr ul li.active > span,
   margin-left: 0.4rem;
 }
 /* line 315, ../sass/_dll-author.scss */
-.page-dll-author th a img {
+.page-dll-author th a img,
+.page-dll-work th a img{
   display: none;
 }
 /* line 320, ../sass/_dll-author.scss */
-.page-dll-author th.views-field-title {
+.page-dll-author th.views-field-title ,
+.page-dll-work th.views-field-title {
   padding: 0 1.5rem 0.8rem;
 }
 /* line 323, ../sass/_dll-author.scss */
 .page-dll-author tr.even,
-.page-dll-author tr.odd {
+.page-dll-author tr.odd,
+.page-dll-work tr.even,
+.page-dll-work tr.odd {
   border-bottom: none;
   background: #F6F7F8;
   padding: 0;
@@ -2167,14 +2231,20 @@ sidr ul li.active > span,
 /* line 333, ../sass/_dll-author.scss */
 .page-dll-author .view-manuscripts td,
 .page-dll-author .view-contextual-view-web-page td,
-.page-dll-author .view-item-record-full-citations td {
+.page-dll-author .view-item-record-full-citations td,
+.page-dll-work .view-manuscripts td,
+.page-dll-work .view-contextual-view-web-page td,
+.page-dll-work .view-item-record-full-citations td {
   padding: 0.8rem 1.5rem 1rem 0;
 }
 @media screen and (max-width: 768px) {
   /* line 333, ../sass/_dll-author.scss */
   .page-dll-author .view-manuscripts td,
   .page-dll-author .view-contextual-view-web-page td,
-  .page-dll-author .view-item-record-full-citations td {
+  .page-dll-author .view-item-record-full-citations td,
+  .page-dll-work .view-manuscripts td,
+  .page-dll-work .view-contextual-view-web-page td,
+  .page-dll-work .view-item-record-full-citations td {
     padding: 0.8rem 1.5rem 1rem;
     width: calc(100% - 3rem);
     display: block;
@@ -2183,14 +2253,20 @@ sidr ul li.active > span,
 /* line 341, ../sass/_dll-author.scss */
 .page-dll-author .view-manuscripts td.views-field-title,
 .page-dll-author .view-contextual-view-web-page td.views-field-title,
-.page-dll-author .view-item-record-full-citations td.views-field-title {
+.page-dll-author .view-item-record-full-citations td.views-field-title,
+.page-dll-work .view-manuscripts td.views-field-title,
+.page-dll-work .view-contextual-view-web-page td.views-field-title,
+.page-dll-work .view-item-record-full-citations td.views-field-title {
   padding: 0.8rem 1.5rem 1rem;
 }
 @media screen and (max-width: 768px) {
   /* line 344, ../sass/_dll-author.scss */
   .page-dll-author .view-manuscripts td.views-field-title:before,
   .page-dll-author .view-contextual-view-web-page td.views-field-title:before,
-  .page-dll-author .view-item-record-full-citations td.views-field-title:before {
+  .page-dll-author .view-item-record-full-citations td.views-field-title:before,
+  .page-dll-work .view-manuscripts td.views-field-title:before,
+  .page-dll-work .view-contextual-view-web-page td.views-field-title:before,
+  .page-dll-work .view-item-record-full-citations td.views-field-title:before {
     content: 'Title: ';
     font-weight: 600;
     color: #535B62;
@@ -2198,7 +2274,10 @@ sidr ul li.active > span,
   /* line 349, ../sass/_dll-author.scss */
   .page-dll-author .view-manuscripts td.views-field-title a,
   .page-dll-author .view-contextual-view-web-page td.views-field-title a,
-  .page-dll-author .view-item-record-full-citations td.views-field-title a {
+  .page-dll-author .view-item-record-full-citations td.views-field-title a,
+  .page-dll-work .view-manuscripts td.views-field-title a,
+  .page-dll-work .view-contextual-view-web-page td.views-field-title a,
+  .page-dll-work .view-item-record-full-citations td.views-field-title a {
     display: inline;
   }
 }
@@ -2206,7 +2285,10 @@ sidr ul li.active > span,
   /* line 356, ../sass/_dll-author.scss */
   .page-dll-author .view-manuscripts td.views-field-field-repository-source:before,
   .page-dll-author .view-contextual-view-web-page td.views-field-field-repository-source:before,
-  .page-dll-author .view-item-record-full-citations td.views-field-field-repository-source:before {
+  .page-dll-author .view-item-record-full-citations td.views-field-field-repository-source:before,
+  .page-dll-work .view-manuscripts td.views-field-field-repository-source:before,
+  .page-dll-work .view-contextual-view-web-page td.views-field-field-repository-source:before,
+  .page-dll-work .view-item-record-full-citations td.views-field-field-repository-source:before {
     content: 'Repository Source: ';
     font-weight: 600;
     color: #535B62;
@@ -2214,26 +2296,33 @@ sidr ul li.active > span,
   /* line 361, ../sass/_dll-author.scss */
   .page-dll-author .view-manuscripts td.views-field-field-source-work:before,
   .page-dll-author .view-contextual-view-web-page td.views-field-field-source-work:before,
-  .page-dll-author .view-item-record-full-citations td.views-field-field-source-work:before {
+  .page-dll-author .view-item-record-full-citations td.views-field-field-source-work:before,
+  .page-dll-work .view-manuscripts td.views-field-field-source-work:before,
+  .page-dll-work .view-contextual-view-web-page td.views-field-field-source-work:before,
+  .page-dll-work .view-item-record-full-citations td.views-field-field-source-work:before {
     content: 'Source: ';
     font-weight: 600;
     color: #535B62;
   }
 }
 /* line 368, ../sass/_dll-author.scss */
-.page-dll-author tr.even {
+.page-dll-author tr.even,
+.page-dll-work tr.even {
   background: #ffffff;
 }
 /* line 372, ../sass/_dll-author.scss */
-.page-dll-author td.active {
+.page-dll-author td.active,
+.page-dll-work td.active {
   background: none;
 }
 /* line 377, ../sass/_dll-author.scss */
-.page-dll-author .item-list ul li {
+.page-dll-author .item-list ul li,
+.page-dll-work .item-list ul li {
   margin: 5px;
 }
 /* line 380, ../sass/_dll-author.scss */
-.page-dll-author .item-list .pager {
+.page-dll-author .item-list .pager,
+.page-dll-work .item-list .pager {
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 10px;
   margin: 30px 0 0;
@@ -2243,11 +2332,19 @@ sidr ul li.active > span,
   background-image: url("../images/dll-work-on-blue.svg");
 }
 /* line 391, ../sass/_dll-author.scss */
-.page-dll-author #item-records h2.pane-title {
+.page-dll-author #item-records h2.pane-title,
+.page-dll-work #item-records h2.pane-title {
   background-image: url("../images/item-record-on-blue.svg");
 }
+
+.page-dll-work #item-records {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 /* line 396, ../sass/_dll-author.scss */
-.page-dll-author #texts-on-the-internet h2.pane-title {
+.page-dll-author #texts-on-the-internet h2.pane-title,
+.page-dll-work #texts-on-the-internet h2.pane-title {
   background-image: url("../images/webpage-on-blue.svg");
 }
 /* line 401, ../sass/_dll-author.scss */
@@ -2255,7 +2352,8 @@ sidr ul li.active > span,
   background-image: url("../images/manuscript-on-blue.svg");
 }
 /* line 405, ../sass/_dll-author.scss */
-.page-dll-author h2.pane-title {
+.page-dll-author h2.pane-title,
+.page-dll-work h2.pane-title {
   background-size: 3.5rem 3.5rem;
   background-repeat: no-repeat;
   background-position: left top;
@@ -3008,22 +3106,30 @@ a.anchor {
 }
 
 /* line 42, ../sass/_browse.scss */
-.page-browse-authors .page-browse .views-exposed-form .views-exposed-widget select#edit-items-per-page {
+.page-browse-authors .page-browse .views-exposed-form .views-exposed-widget select#edit-items-per-page,
+.page-browse-works .page-browse .views-exposed-form .views-exposed-widget select#edit-items-per-page,
+.page-browse-item-records .page-browse .views-exposed-form .views-exposed-widget select#edit-items-per-page {
   height: 42px;
 }
 /* line 45, ../sass/_browse.scss */
-.page-browse-authors .views-exposed-widgets {
+.page-browse-authors .views-exposed-widgets,
+.page-browse-works .views-exposed-widgets,
+.page-browse-item-records .views-exposed-widgets {
   background: #f6f7f8;
   padding: 28px;
 }
 @media screen and (max-width: 740px) {
   /* line 49, ../sass/_browse.scss */
-  .page-browse-authors .views-exposed-widgets .views-submit-button {
+  .page-browse-authors .views-exposed-widgets .views-submit-button,
+  .page-browse-works .views-exposed-widgets .views-submit-button,
+  .page-browse-item-records .views-exposed-widgets .views-submit-button {
     float: left;
     clear: left;
   }
   /* line 52, ../sass/_browse.scss */
-  .page-browse-authors .views-exposed-widgets .views-submit-button .form-submit {
+  .page-browse-authors .views-exposed-widgets .views-submit-button .form-submit,
+  .page-browse-works .views-exposed-widgets .views-submit-button .form-submit,
+  .page-browse-item-records .views-exposed-widgets .views-submit-button .form-submit {
     margin-left: 0 !important;
   }
 }
