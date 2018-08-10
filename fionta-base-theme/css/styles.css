@@ -565,6 +565,14 @@ Page
   }
 }
 
+div.view-display-id-page {
+   padding-top: 15px;
+}
+
+div.view-display-id-page .views-row {
+   padding-top: 15px;
+}
+
 /***************
  Global
  **************/

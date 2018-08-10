@@ -15,7 +15,44 @@ function fionta_current_alias_path() {
  *  Adds a theme specific class to the body of the page, which is helpful for CSS selecting
  *  
  */
-function fionta_base_theme_preprocess_html(&$vars) { $vars['classes_array'][] = 'fionta_base_theme'; }
+function fionta_base_theme_preprocess_html(&$vars) {
+    $vars['classes_array'][] = 'fionta_base_theme';
+
+    if ($format = _fionta_getFormat() and _fionta_isFormattableNodeType()) {
+        $vars['theme_hook_suggestion'] = 'html__blank';
+    }
+}
+
+/**
+ * Figures out the output format from globals and whatnot.
+ */
+function _fionta_getFormat() {
+    $allowed_formats = ['xml', 'json', 'rdf'];
+
+    if (isset($_GET['format']) && in_array($_GET['format'], $allowed_formats)) {
+        return $_GET['format'];
+    }
+
+    return false;
+
+    // TODO: Path manipulation?
+}
+
+function _fionta_isFormattableNodeType() {
+    if (!$node = menu_get_object()) {
+        return false;
+    }
+
+    $allowed_node_types = [
+        'author_authorities',
+        'dll_work',
+        'repository_item',
+        'manuscript',
+        'web_page',
+    ];
+
+    return isset($node->type) && in_array($node->type, $allowed_node_types);
+}
 
 
 /**
