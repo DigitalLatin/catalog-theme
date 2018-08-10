@@ -1,1 +1,1 @@
-<?php print json_encode($node); ?>
+<?php print json_encode($dll_template); ?>

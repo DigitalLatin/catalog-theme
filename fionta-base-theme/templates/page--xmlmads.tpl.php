@@ -17,9 +17,12 @@
         <mads:temporal point="start"><?= $dll_template['date']['start']; ?></mads:temporal>
         <mads:temporal point="end"><?= $dll_template['date']['end']; ?></mads:temporal>
 
-        <?php foreach($dll_template['approximate_dates'] as $appx): ?>
-          <mads:temporal qualifier="approximate"><?= $appx; ?></mads:temporal>
-        <?php endforeach; ?>
+        <?php if(empty($dll_template['date']['start']) && empty($dll_template['date']['end'])): ?>
+            <?php foreach($dll_template['approximate_dates'] as $appx): ?>
+            <mads:temporal qualifier="approximate"><?= $appx; ?></mads:temporal>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        
     </mads:authority>
     
     <!-- The following variants may or may not have values, or they might have multiple values. -->

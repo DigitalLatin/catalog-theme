@@ -1,5 +1,7 @@
 <?php
 
+include_once __DIR__ . "/includes/DllNodeFormatter.php";
+
 /**
  *  Wrapper for drupal_get_path_alias which handles front page exception better
  *
@@ -18,7 +20,7 @@ function fionta_current_alias_path() {
 function fionta_base_theme_preprocess_html(&$vars) {
     $vars['classes_array'][] = 'fionta_base_theme';
 
-    if ($format = _fionta_getFormat() and _fionta_isFormattableNodeType()) {
+    if ($format = _fionta_getFormat() and DLLNodeFormatter::isFormattable()) {
         $vars['theme_hook_suggestion'] = 'html__blank';
     }
 }
@@ -34,26 +36,7 @@ function _fionta_getFormat() {
     }
 
     return false;
-
-    // TODO: Path manipulation?
 }
-
-function _fionta_isFormattableNodeType() {
-    if (!$node = menu_get_object()) {
-        return false;
-    }
-
-    $allowed_node_types = [
-        'author_authorities',
-        'dll_work',
-        'repository_item',
-        'manuscript',
-        'web_page',
-    ];
-
-    return isset($node->type) && in_array($node->type, $allowed_node_types);
-}
-
 
 /**
  *  Will generate html and print it to screen for a block
