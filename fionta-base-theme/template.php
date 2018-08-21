@@ -12,7 +12,7 @@ function fionta_base_theme_preprocess_page(&$vars)
     $formatter->modifyDisplay($vars);
   }
 
-  if (isset($vars['node'])) {
+   if (isset($vars['node'])) {
     $vars['theme_hook_suggestion'] = 'page__' . $vars['node']->type;
   }
 }

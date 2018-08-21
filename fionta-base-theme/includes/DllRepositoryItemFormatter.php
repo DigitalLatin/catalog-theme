@@ -41,7 +41,7 @@ class DllRepositoryItemFormatter extends DllFormatCommon
       "Place" => $w->field_place_of_publication->value(),
       "Date" => $w->field_date->value(),
       "Source" => $w->field_work_reference->value() ? $w->field_work_reference->value()[0]->title : null,
-      "OriginalURI" => $w->field_original_uri->value() ? $w->field_original_uri->value()['url'] : null,
+      "OriginalURI" => $w->field_source_work->value() ? $w->field_source_work->value()['url'] : null,
       "Repository" => $w->field_repository_source->value(),
       "DLLid" => $w->field_dll_identifier->value(),
       "Rights" => $w->field_rights->value(),

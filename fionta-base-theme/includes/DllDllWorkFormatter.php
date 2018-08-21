@@ -51,7 +51,6 @@ class DllDllWorkFormatter extends DllFormatCommon
         "Attribution" => "This work has been attributed by some to this author.",
         "AttributedAuthorName" => $w->field_attributed_to->value() ? $w->field_attributed_to->value()->title : null,
       ]],
-      "TextGroup" => $w->field_text_group->value() ? $w->field_text_group->value()->title : null,
       "Identifier" => [
         "DLLid" => $w->field_dll_identifier->value(),
         "STOAid" => $w->field_stoa_number->value(),

@@ -16,9 +16,9 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
       empty($ancient) ? '' : $ancient[0]->name,
     ];
 
-    $formatted['time_period_authorities'] = $w->field_time_period_authorities[0]->value()->name;
+    $formatted['time_period'] = $w->field_time_period[0]->value()->name;
 
-    $formatted['authorities'] = [$w->field_time_period_authorities[0]->value()->name];
+    $formatted['authorities'] = [$w->field_time_period[0]->value()->name];
 
     $formatted['geography'] = [
       $w->field_modern_geographic_identity->value(),
@@ -34,7 +34,6 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
       'lccn'      => $w->field_loc_id->value(),
       'VIAF URL'  => $w->field_viaf_source->value()['url'],
       'viaf'      => $w->field_viaf_id->value(),
-      'dll_author' => $w->field_dll_author_number->value(),
       'dll'        => $w->field_dll_identifier->value(),
       'DLL Catalog Link' => strip_tags($w->field_dll_page_link->value()),
     ];
@@ -48,7 +47,7 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
 
     $formatted['approximate_dates'] = [
       $w->field_floruit_active->value(),
-      $w->field_time_period_authorities->value()[0]->name,
+      $w->field_time_period->value()->name,
     ];
 
     $formatted['source'] = [$w->field_viaf_source->value()->url];
@@ -139,7 +138,7 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
       "BirthDate" => $w->field_author_birth_date->value(),
       "DeathDate" => $w->field_author_death_date->value(),
       "Floruit" => $w->field_floruit_active->value(),
-      "TimePeriod" => $w->field_time_period_authorities->value()[0]->name,
+      "TimePeriod" => $w->field_time_period->value(),
       "ExactExternalAuthority" => $external_authority,
       "Identifier" => [
         "DLLid" => $w->field_dll_identifier->value(),
