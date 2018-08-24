@@ -2,7 +2,7 @@
 
 require_once dirname(__FILE__) . '/DllFormatCommon.php';
 
-class DllDllWorkFormatter extends DllFormatCommon
+class DllWorkFormatter extends DllFormatCommon
 {
   public function xml()
   {
@@ -57,17 +57,17 @@ class DllDllWorkFormatter extends DllFormatCommon
       "@id" => strip_tags($w->field_dll_page_link->value()),
       "Title" => $w->field_work_name->value(),
       "Variant" => ["VariantTitle" => [$w->field_alternative_title->value()]],
-      "WorkAuthority" => $w->field_work_authority->value()->name(),
+      "WorkAuthority" => $w->field_work_authority->value()->name,
       "Author" => ["AuthorName" => ["AuthorizedName" => $w->field_author->value()[0]->title]],
       "Abbreviation" => $w->field_work_abbreviated->value(),
-      "HasPart" => ["HasPart" => [$w->field_has_part->value()]],
-      "PartOf" => ["PartOf" => [$w->field_part_of->value()]],
-      "References" => ["References" => [$w->field_references->value()]],
-      "AttributedName" => ["AttributedName" => [
-        "Dubious" => $w->field_dubious_spurious_attributi->value(),
-        "Attribution" => "If there is a value here, this work has been attributed by some to this author.",
-        "AttributedAuthorName" => $w->field_attributed_to->value() ? $w->field_attributed_to->value()->title : null,
-      ]],
+      //"HasPart" => ["HasPart" => [$w->field_has_part->value()]],
+      //"PartOf" => ["PartOf" => [$w->field_part_of->value()]],
+      //"References" => ["References" => [$w->field_references->value()]],
+      //"AttributedName" => ["AttributedName" => [
+      //  "Dubious" => $w->field_dubious_spurious_attributi->value(),
+       // "Attribution" => "If there is a value here, this work has been attributed by some to this author.",
+      //  "AttributedAuthorName" => $w->field_attributed_to->value() ? $w->field_attributed_to->value()->title : null,
+     // ]],
       "Identifier" => [
         "DLLid" => $w->field_dll_identifier->value(),
         "STOAid" => $w->field_stoa_number->value(),
