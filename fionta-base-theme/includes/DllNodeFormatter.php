@@ -3,7 +3,7 @@
 require_once dirname(__FILE__) . '/DllAuthorAuthoritiesFormatter.php';
 require_once dirname(__FILE__) . '/DllRepositoryItemFormatter.php';
 require_once dirname(__FILE__) . '/DllWebPageFormatter.php';
-require_once dirname(__FILE__) . '/DllDllWorkFormatter.php';
+require_once dirname(__FILE__) . '/DllWorkFormatter.php';
 
 class DLLNodeFormatter {
   private $node;
