@@ -65,17 +65,17 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
    */
   public function json($w, &$formatted) {
     $external_authority = [
-      $w->field_viaf_source->value(),
-      $w->field_locsource->value(),
-      $w->field_lofc_uri->value(),
-      $w->field_bne_url->value(),
-      $w->field_bnf_url->value(),
-      $w->field_dnb_url->value(),
-      $w->field_iccu_url->value(),
-      $w->field_isni_url->value(),
-      $w->field_wikidata_url->value(),
-      $w->field_wikipedia->value(),
-      $w->field_worldcat_identity->value(),
+      "VIAF" => $w->field_viaf_source->value() ? $w->field_viaf_source->value()['url'] : null,
+      "LCCN" => $w->field_locsource->value() ? $w->field_locsource->value()['url'] : null,
+      "LOC" => $w->field_lofc_uri->value() ? $w->field_lofc_uri->value()['url'] : null,
+      "BNE" => $w->field_bne_url->value() ?$w->field_bne_url->value()['url'] : null,
+      "BNF" => $w->field_bnf_url->value() ? $w->field_bnf_url->value()['url'] : null,
+      "DNB" => $w->field_dnb_url->value() ? $w->field_dnb_url->value()['url'] : null,
+      "ICCU" => $w->field_iccu_url->value() ? $w->field_iccu_url->value()['url'] : null,
+      "ISNI" => $w->field_isni_url->value() ? $w->field_isni_url->value()['url'] : null,
+      "Wikidata" => $w->field_wikidata_url->value() ? $w->field_wikidata_url->value()['url'] : null,
+      "Wikipedia" => $w->field_wikipedia->value() ? $w->field_wikipedia->value()['url'] : null,
+      "Worldcat" => $w->field_worldcat_identity->value() ? $w->field_worldcat_identity->value()['url'] : null,
     ];
 
     $external_authority = array_filter($external_authority, function ($i) {
@@ -89,11 +89,11 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
       "EnglishVariant" => $w->field_author_name_english->value(),
       "NativeLanguageVariant" => $w->field_author_name_native_languag->value(),
       "AlsoKnownAs" => !empty($aka[0]) ? $aka[0]->title : null,
-      "BNEName" => $w->field_bne_url->value() ? $w->field_bne_url->value()['url'] : null,
-      "BNFName" => $w->field_bnf_url->value() ? $w->field_bnf_url->value()['url'] : null,
-      "DNBName" => $w->field_dnb_url->value() ? $w->field_dnb_url->value()['url'] : null,
-      "ICCUName" => $w->field_iccu_url->value() ? $w->field_iccu_url->value()['url'] : null,
-      "ISNIName" => $w->field_isni_url->value() ? $w->field_isni_url->value()['url'] : null,
+      "BNEName" => $w->field_bne_url->value() ? $w->field_bne_url->value()['title'] : null,
+      "BNFName" => $w->field_bnf_url->value() ? $w->field_bnf_url->value()['title'] : null,
+      "DNBName" => $w->field_dnb_url->value() ? $w->field_dnb_url->value()['title'] : null,
+      "ICCUName" => $w->field_iccu_url->value() ? $w->field_iccu_url->value()['title'] : null,
+      "ISNIName" => $w->field_isni_url->value() ? $w->field_isni_url->value()['title'] : null,
     ];
 
     $name_variants = $this->flatten($name_variants);
@@ -138,7 +138,7 @@ class DllAuthorAuthoritiesFormatter extends DllFormatCommon {
       "BirthDate" => $w->field_author_birth_date->value(),
       "DeathDate" => $w->field_author_death_date->value(),
       "Floruit" => $w->field_floruit_active->value(),
-      "TimePeriod" => $w->field_time_period->value(),
+      "TimePeriod" => $w->field_time_period->value()->name,
       "ExactExternalAuthority" => $external_authority,
       "Identifier" => [
         "DLLid" => $w->field_dll_identifier->value(),
