@@ -3801,6 +3801,15 @@ form.search-form {
 .page-search .search-api-page-results .node .content {
   margin-bottom: 3.4rem;
 }
+
+.page-search .search-api-page-results .node-author-authorities {
+    background-image: url("../images/authority-record-on-blue.svg");
+}
+
+.page-search .search-api-page-results .node-dll-work {
+    background-image: url("../images/dll-work-on-blue.svg");
+}
+
 /* line 60, ../sass/_search.scss */
 .page-search .search-api-page-results .node-repository-item {
   background-image: url("../images/dll-work-on-blue.svg");
@@ -3814,6 +3823,8 @@ form.search-form {
   background-image: url("../images/manuscript-on-blue.svg");
 }
 /* line 69, ../sass/_search.scss */
+.page-search .search-api-page-results .node-author-authorities,
+.page-search .search-api-page-results .node-dll-work,
 .page-search .search-api-page-results .node-repository-item,
 .page-search .search-api-page-results .node-web-page,
 .page-search .search-api-page-results .node-manuscript {
@@ -3922,4 +3933,16 @@ form.search-form {
 /* line 206, ../sass/_search.scss */
 .page-search .search-facet .item-list ul li a {
   color: #535B62;
+}
+
+/***************
+About Search
+***************/
+#about-search td {
+    vertical-align: top;
+}
+
+#about-search td.image {
+    padding-top: 8px;
+    width: 10%;
 }
