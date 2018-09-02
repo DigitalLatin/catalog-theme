@@ -3812,7 +3812,7 @@ form.search-form {
 
 /* line 60, ../sass/_search.scss */
 .page-search .search-api-page-results .node-repository-item {
-  background-image: url("../images/dll-work-on-blue.svg");
+  background-image: url("../images/item-record-on-blue.svg");
 }
 /* line 63, ../sass/_search.scss */
 .page-search .search-api-page-results .node-web-page {
@@ -3837,6 +3837,10 @@ form.search-form {
 .page-search p.search-api-result-count {
   border-bottom: 1px solid #B9BFC5;
   padding-bottom: 1rem;
+}
+
+.page-search .search-facet-container {
+    padding-top: 40px;
 }
 /* line 131, ../sass/_search.scss */
 .page-search .panels-flexible-region-inside-first {
@@ -3888,6 +3892,7 @@ form.search-form {
 /* line 170, ../sass/_search.scss */
 .page-search .panels-flexible-region-last .inside .panel-pane.search-facet:last-of-type {
   margin: 0 0 2rem;
+  padding-bottom: 40px;
 }
 /* line 173, ../sass/_search.scss */
 .page-search .panels-flexible-region-last .inside .panel-pane.search-facet .pane-content {
@@ -3940,9 +3945,13 @@ About Search
 ***************/
 #about-search td {
     vertical-align: top;
+    height: 75px;
 }
 
 #about-search td.image {
-    padding-top: 8px;
     width: 10%;
+}
+
+#about-search tr {
+    line-height: normal;
 }
